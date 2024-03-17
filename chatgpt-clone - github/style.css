@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #343541;
+    display: flex;
+}
+h1{
+    font-size: 33px;
+    font-weight: 600;
+    padding: 200px 0;
+}
+
+.side-bar {
+    background-color: #202123;
+    width: 244px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 1500px;
+    /* min-width: 1500px; */
+}
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  height: 100vh;
+  width: 100%;
+  max-width: 1500px;
+}
+.bottom-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  max-width: 1500px;
+    
+}
+.info{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 11px;
+    padding: 10px;
+
+
+}
+input {
+    border: none;
+    background-color:rgba(255, 255, 255, 0.05) ;
+    width: 100%;
+    font-size: 20px;
+    padding: 12px 15px;
+    border-radius: 5px;
+    box-shadow: rgba(0,0,0,0.5) 0 54px 55px,
+     rgba(0,0,0,0.05) 0 -12px 30px,
+      rgba(0,0,0,0.05) 0 4px 6px,
+       rgba(0,0,0,0.05) 0 12px 3px,
+        rgba(0,0,0,0.09) 0 -3px 5px;
+  
+
+}
+input:focus{
+    outline: none;
+
+}
+.input-container{
+    width: 100%;
+    max-width: 650px;
+    position: relative;
+ 
+
+}
+.input-container #submit {
+    position: absolute;
+    right: 0;
+    bottom: 15px;
+    cursor: pointer;
+
+
+}
+button{
+    border: solid 0.5px rgba(255, 255, 255, 0.5);
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+
+
+}
+
+.nav {
+    border-top:  solid 0.5px rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    margin: 10px;
+  max-width: 1500px;
+
+}
+.history{
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  max-width: 1500px;
+
+}
+
+.history p{
+  cursor: pointer;
+  max-width: 1500px;
+
+}
+
+
+
+@media only screen and (max-width: 1500px) {
+    h1 {
+        font-size: 20px;
+        padding: 15px 0;
+    }
+
+    .side-bar {
+        width: 25%;
+        bottom: 0;
+    }
+    
+    p, #output {
+        height: auto;
+        width: auto;
+    }
+  
+    body {
+        height: auto;
+        width: auto;
+    }
+    
+    .info {
+        height: auto;
+        width: auto;
+    }
+    
+    input, #submit {
+        width: calc(50% - 20px); /* Adjusted width to leave space for icon */
+    }
+}
+
+@media only screen and (min-width: 280px) and (max-width: 1524px) {
+    h1 {
+        font-size: 25px;
+        padding: 15px 0;
+    }
+    
+    p, #output {
+        height: auto;
+        width: auto;
+    }
+    
+    body {
+        height: auto;
+        width: auto;
+    }
+    
+    input, #submit {
+        width: calc(60% - 20px); /* Adjusted width to leave space for icon */
+        margin: auto;
+    }
+}
+
+
+
+
